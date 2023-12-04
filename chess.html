@@ -1,0 +1,882 @@
+
+<!DOCTYPE html>
+
+
+<html>
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="chess.css">
+    </head>
+
+
+<body>
+
+
+        <div>
+            <table id="chessboard" cellspacing="0" style="table-layout: fixed;">
+                <tr>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                </tr>
+                <tr>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                </tr>
+                <tr>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                </tr>
+                <tr>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                </tr>
+                <tr>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                </tr>
+                <tr>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                </tr>
+                <tr>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                </tr>
+                <tr>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                    <td onmouseover="hover(this)" onmouseout="unhover(this)" onclick="movePiece(this)"></td>
+                </tr>
+
+
+            </table>
+
+
+        </div>
+
+
+
+
+        <div>
+            <input type="button" value="black" onclick="black()">
+            <input type="button" value="white" onclick="white()">
+        </div>
+
+        <div>
+            <input type="button" value="rotate" hidden="hidden" onclick="rotate()">
+        </div>
+
+
+        <script>
+        let x = document.getElementsByTagName("td");
+        let btnRmv = false;
+
+
+        let whiteSide=-1;
+        let blackSide=-1;
+
+
+
+
+        let WHITEKING = "♔";
+        let WHITEQUEEN = "♕";
+        let WHITEROOK = "♖";
+        let WHITEBISHOP = "♗";
+        let WHITEKNIGHT = "♘";
+        let WHITEPAWN = "♙";
+
+
+        let BLACKKING = "♚";
+        let BLACKQUEEN = "♛";
+        let BLACKROOK = "♜";
+        let BLACKBISHOP = "♝";
+        let BLACKKNIGHT = "♞";
+        let BLACKPAWN = "♟";
+
+        let whitePieces = [WHITEKING, WHITEQUEEN, WHITEROOK, WHITEBISHOP, WHITEKNIGHT, WHITEPAWN];
+        let blackPieces = [BLACKKING, BLACKQUEEN, BLACKROOK, BLACKBISHOP, BLACKKNIGHT, BLACKPAWN];
+
+
+    let whitePawnMoves = [-1,-1,-1,-1,-1,-1,-1,-1];
+    let blackPawnMoves = [-1,-1,-1,-1,-1,-1,-1,-1];
+    let leftWhiteRookMove = false;
+    let leftBlackRookMove = false;
+    let blackKingSquare = -1;
+    let whiteKingSquare = -1;
+
+
+    let turn = 0;
+    
+
+    function black(){
+        rmvBtn();
+        btnRmv=true;
+        color();
+        blackSide=0;
+        whiteSide=1;
+
+
+        x[7*8].innerHTML=BLACKROOK;
+        x[8*8-1].innerHTML=BLACKROOK;
+        x[7*8+1].innerHTML=BLACKKNIGHT;
+        x[8*8-2].innerHTML=BLACKKNIGHT;
+        x[(7*8)+2].innerHTML=BLACKBISHOP;
+        x[8*8-3].innerHTML=BLACKBISHOP;
+        x[8*8-4].innerHTML=BLACKQUEEN;
+        x[7*8+3].innerHTML=BLACKKING;
+
+        blackKingSquare = 7*8+3;
+
+
+        for(let i = 6*8; i<7*8; i++){
+        x[i].innerHTML= BLACKPAWN;
+        }
+
+
+        for(let i=8; i<16;i++){
+        x[i].innerHTML= WHITEPAWN;
+
+
+        }
+
+
+        x[0].innerHTML=WHITEROOK;
+        x[7].innerHTML=WHITEROOK;
+        x[1].innerHTML=WHITEKNIGHT;
+        x[6].innerHTML=WHITEKNIGHT;
+        x[2].innerHTML=WHITEBISHOP;
+        x[5].innerHTML=WHITEBISHOP;
+        x[4].innerHTML=WHITEQUEEN;
+        x[3].innerHTML=WHITEKING;
+
+        whiteKingSquare = 3;
+    }
+
+
+    function white(){
+        rmvBtn();
+        btnRmv=true;
+        color();
+        whiteSide=0;
+        blackSide=1;
+        x[0].innerHTML=BLACKROOK;
+        x[7].innerHTML=BLACKROOK;
+        x[1].innerHTML=BLACKKNIGHT;
+        x[6].innerHTML=BLACKKNIGHT;
+        x[2].innerHTML=BLACKBISHOP;
+        x[5].innerHTML=BLACKBISHOP;
+        x[3].innerHTML=BLACKQUEEN;
+        x[4].innerHTML=BLACKKING;
+
+        blackKingSquare = 4;
+
+        for(let i = 8; i<16; i++){
+        x[i].innerHTML= BLACKPAWN;
+        }
+
+
+        for(let i=6*8; i<7*8;i++){
+        x[i].innerHTML= WHITEPAWN;
+        }
+
+
+        x[7*8].innerHTML=WHITEROOK;
+        x[(8*8)-1].innerHTML=WHITEROOK;
+        x[(7*8)+1].innerHTML=WHITEKNIGHT;
+        x[(8*8)-2].innerHTML=WHITEKNIGHT;
+        x[(7*8)+2].innerHTML=WHITEBISHOP;
+        x[(8*8)-3].innerHTML=WHITEBISHOP;
+        x[(7*8)+3].innerHTML=WHITEQUEEN;
+        x[(8*8)-4].innerHTML=WHITEKING;
+
+        whiteKingSquare = 8*8-4;
+    }
+
+    
+
+    function rotate(){ //rotation using a rotation matrix
+        let rotated = new Array(64);
+        let updatedWhitePawnMoves = new Array(8);
+        let updatedBlackPawnMoves = new Array(8);
+        for(let i=0; i<64; i++){
+            row= Math.floor(i/8);
+            col= i%8;
+            rotated[(7-row)*8 + (7-col)] = listOfCells[i].innerHTML; //for fun to make it 90 degrees counterclockwise do (7-col)*8 + row, for clockwise do (col)*8 + (7-row)  //180 degrees (7-row)*8 + (7-col)
+
+            if(i<8){
+                updatedWhitePawnMoves[7-i] = whitePawnMoves[i];
+                updatedBlackPawnMoves[7-i] = blackPawnMoves[i];
+            }
+        }
+        for(let i=0; i<64; i++){
+            listOfCells[i].innerHTML=rotated[i];
+
+            if(i<8){
+                whitePawnMoves[i]=updatedWhitePawnMoves[i];
+                blackPawnMoves[i]=updatedBlackPawnMoves[i];
+            }
+        }
+
+        blackSide=Math.abs(blackSide-1);
+        whiteSide=Math.abs(whiteSide-1);
+        toSwitchSquare=(7-Math.floor(toSwitchSquare/8))*8 + (7-(toSwitchSquare%8));
+        whiteKingSquare = (7-Math.floor(whiteKingSquare/8))*8 + (7-(whiteKingSquare%8));
+        blackKingSquare = (7-Math.floor(blackKingSquare/8))*8 + (7-(blackKingSquare%8));
+    }
+    
+
+    function color(){
+        for(let row = 1; row<9; row++){
+            for(let col = 1; col<9; col++){
+                if(!(row%2===0 && col%2===0) && !(row%2!==0 && col%2!==0)){
+                    x[(8*(row-1)) + col-1].bgColor = "darkgreen";
+                }
+                else{
+                    x[(8*(row-1)) + col-1].bgColor = "white";
+                }
+                x[(8*(row-1)) + col-1].style.border="4px solid transparent";
+            }
+        }
+        document.getElementsByTagName("input")[0].removeAttribute("hidden");
+    }
+
+
+    for(let r=2; r<6; r++){for(let c=0; c<8; c++){x[8*r+c].innerHTML=""}}
+
+
+    function rmvBtn(){
+        document.getElementsByTagName("input")[0].remove();
+        document.getElementsByTagName("input")[0].remove();
+
+
+        document.getElementById("chessboard").style.border = "1px solid darkgreen";
+    }
+
+
+    function hover(y){
+        if(btnRmv){
+            y.style.borderColor="yellow";
+        }
+    }
+
+    function unhover(y){
+        if(btnRmv){
+            y.style.borderColor="transparent";
+        }
+    }
+
+
+    for(let r=0;r<8;r++){for(let c=0;c<8;c++){x[(r*8)+c].style.fontSize="450%";}}
+
+
+    let toSwitch = "";
+    let toSwitchSquare = -1;
+    let listOfCells=[];
+
+
+
+    for(let i=0; i<64; i++){
+        listOfCells.push(x[i]);
+    }
+
+
+
+
+    function movePiece(y){
+
+        if(turn%2==0 && whitePieces.indexOf(y.innerHTML)!=-1 || turn%2!=0 && blackPieces.indexOf(y.innerHTML)!=-1){
+
+            
+            store(y);
+        }
+
+        if(capt(y)){
+            capture(y);
+        }
+        else if(typeRules(listOfCells.indexOf(y))){
+            move(y);
+        }
+
+
+    }
+
+
+    function capture(y){
+        if(toSwitch == BLACKKING){
+            blackKingSquare = listOfCells.indexOf(y);
+        }
+        else if(toSwitch == WHITEKING){
+            whiteKingSquare = listOfCells.indexOf(y);
+        }
+
+        let savedY = y.innerHTML;
+        let savedToSwitch = toSwitch;
+        let savedToSwitchSquare = toSwitchSquare;
+        let savedText = x[toSwitchSquare].innerHTML;
+
+        y.innerHTML = toSwitch;
+        x[toSwitchSquare].innerHTML = "";
+        toSwitch = "";
+        toSwitchSquare = -1;
+
+        for(let i = 0; i < 64; i++){
+                toSwitch=listOfCells[i].innerHTML;
+                toSwitchSquare=i;
+                if(turn%2==0 && blackPieces.indexOf(toSwitch)!=-1 && toSwitch!=BLACKKING && toSwitch!=BLACKPAWN && getVision(whiteKingSquare)){
+                    toSwitch=savedToSwitch;
+                    toSwitchSquare=savedToSwitchSquare;
+                    y.innerHTML = toSwitch;
+                    x[toSwitchSquare] = savedText;
+                    break;
+                }    
+                
+            }
+
+        turn++;
+    }
+
+
+    function capt(y){
+
+
+        if((turn%2==0 && whitePieces.indexOf(toSwitch) != -1) || (turn%2!=0 && blackPieces.indexOf(toSwitch) != -1)){
+
+            let toRow = getRow(toSwitchSquare);
+            let toCol = getCol();
+            let newRow = getRow(listOfCells.indexOf(y));
+            let newCol = getCol();
+
+            if(toSwitch == WHITEPAWN){
+                
+                
+                if(Math.abs(toCol-newCol) == 1 && blackPawnMoves[newCol] == turn-1){
+
+                    if(whiteSide == 0 && newRow == toRow-1 || whiteSide == 1 && newRow == toRow+1){
+                        x[toRow*8 + newCol].innerHTML = "";
+                        return true;
+                    }
+                }
+                
+            }
+            else if(toSwitch == BLACKPAWN){
+                if(Math.abs(toCol-newCol) == 1 && whitePawnMoves[newCol] == turn-1){
+
+                    if(blackSide == 0 && newRow == toRow-1 || blackSide == 1 && newRow == toRow+1){
+                        x[toRow*8 + newCol].innerHTML = "";
+                        return true;
+                    }
+                }
+            }
+
+            if((whitePieces.indexOf(toSwitch) != -1 && blackPieces.indexOf(y.innerHTML) != -1)
+            || (whitePieces.indexOf(y.innerHTML) != -1 && blackPieces.indexOf(toSwitch) != -1)){
+
+
+                return pawnCapture(y);
+            }
+
+
+            return false;
+        }
+    }
+
+
+
+
+    function store(y){
+        if(y.innerHTML!==""){
+            toSwitch = y.innerHTML;
+            toSwitchSquare = listOfCells.indexOf(y);
+        }
+    }
+
+
+    function move(y){
+        // let savedToSwitch = toSwitch;
+        // let savedToSwitchSquare = toSwitchSquare;
+
+        // for(let i = 0; i < 64; i++){
+        //         toSwitch=listOfCells[i].innerHTML;
+        //         toSwitchSquare=i;
+        //         if(turn%2==1 && blackPieces.indexOf(toSwitch)!=-1 && toSwitch!=BLACKKING && toSwitch!=BLACKPAWN && getVision(whiteKingSquare)){
+        //             toSwitch=savedToSwitch;
+        //             toSwitchSquare=savedToSwitchSquare;
+        //             break;
+        //         }    
+                
+        // }
+
+        if((turn%2==0 && whitePieces.indexOf(toSwitch) != -1) || (turn%2!=0 && blackPieces.indexOf(toSwitch) != -1)){
+            
+
+            if(y.innerHTML==""){
+                if(toSwitchSquare > -1){
+
+                    if(toSwitch == BLACKKING){
+                        blackKingSquare = listOfCells.indexOf(y);
+                    }
+                    else if(toSwitch == WHITEKING){
+                        whiteKingSquare = listOfCells.indexOf(y);
+                    }
+
+                    y.innerHTML = toSwitch;
+                    x[toSwitchSquare].innerHTML="";
+                    toSwitch = "";
+                    toSwitchSquare = -1;
+
+
+                    turn++;
+                }
+            }
+           
+            toSwitch = y.innerHTML;
+            toSwitchSquare = listOfCells.indexOf(y);
+            
+        }
+    }
+
+
+    function typeRules(newSquare){
+        if(!getVision(newSquare)){
+            return false;
+        }
+
+        let toRow = getRow(toSwitchSquare);
+        let toCol = getCol();
+        let newRow = getRow(newSquare);
+        let newCol = getCol();
+
+        if(toSwitch == BLACKROOK || toSwitch == WHITEROOK) {
+
+            if((toRow==newRow && toCol != newCol) || (toCol == newCol && toRow!=newRow)){
+                return true;
+            }
+            return false;
+
+        }
+        else if(toSwitch == WHITEBISHOP || toSwitch == BLACKBISHOP){
+
+            if(Math.abs(toRow-newRow) == Math.abs(toCol-newCol)){
+                return true;
+            }
+        }
+        else if(toSwitch == WHITEQUEEN || toSwitch == BLACKQUEEN){
+
+            if((toRow==newRow && toCol != newCol) || (toCol == newCol && toRow!=newRow)){
+                return true;
+            }
+
+            if(Math.abs(toRow-newRow) == Math.abs(toCol-newCol)){
+                return true;
+            }
+            
+        }
+        else if(toSwitch == WHITEKNIGHT || toSwitch == BLACKKNIGHT){
+            return knightMovement(newSquare);
+        }
+        else if(toSwitch == WHITEKING || toSwitch == BLACKKING){
+            return kingMovement(newSquare);
+        }
+
+
+        else if(toSwitch == WHITEPAWN){
+
+            if(newCol != toCol){
+                return false;
+            }
+
+
+            if(whiteSide==0 && newRow-toRow == -2 && toSwitchSquare-(6*8)<=7 && toSwitchSquare-(6*8)>=0){
+                whitePawnMoves[toSwitchSquare-(6*8)] = turn;
+                return true;
+            }
+            else if(whiteSide==1 && newRow-toRow == 2 && toSwitchSquare-8<=7){
+                whitePawnMoves[toSwitchSquare-8] = turn;
+                return true;
+            }
+
+
+            if(whiteSide==0 && newRow-toRow == -1){
+                return true;
+            }
+            else if(whiteSide==1 && newRow-toRow == 1){
+                return true;
+            }
+            return false;
+            
+        }
+
+        else if(toSwitch == BLACKPAWN){
+            if(newCol != toCol){
+                return false;
+            }
+
+
+            if(blackSide==0 && newRow-toRow == -2 && toSwitchSquare-(6*8)<=7 && toSwitchSquare-(6*8)>=0){
+                blackPawnMoves[toSwitchSquare-(6*8)] = turn;
+                return true;
+            }
+            else if(blackSide==1 && newRow-toRow == 2 && toSwitchSquare-8<=7){
+                blackPawnMoves[toSwitchSquare-8] = turn;
+                return true;
+            }
+
+            if(blackSide==0 && newRow-toRow == -1){
+                return true;
+            }
+            else if(blackSide==1 && newRow-toRow == 1){
+                return true;
+            }
+            return false;
+        }
+    }
+
+
+    let col = -1;
+
+
+    function getRow(square){
+        col = square%8;
+        return Math.floor(square/8);
+    }
+
+
+    function getCol(){
+        let z = col;
+        col = -1;
+        return z;
+    }
+
+
+    function knightMovement(newSquare){
+
+
+        let toRow = getRow(toSwitchSquare);
+        let toCol = getCol();
+        let newRow = getRow(newSquare);
+        let newCol = getCol();
+
+
+        if(toCol == newCol+2 || toCol == newCol-2){
+
+
+            if(toRow == newRow-1 || toRow == newRow+1){
+                return true;
+            }
+            return false;
+        }
+        else if(toRow == newRow+2 || toRow == newRow-2){
+
+
+            if(toCol == newCol+1 || toCol == newCol-1){
+                return true
+            }
+
+
+        }
+        return false;
+    }
+
+
+    function kingMovement(newSquare){
+        let toRow = getRow(toSwitchSquare);
+        let toCol = getCol();
+        let newRow = getRow(newSquare);
+        let newCol = getCol();
+
+
+        if(Math.abs(toRow - newRow) == 1 && Math.abs(toCol - newCol) == 1){
+            return true;
+        }
+        else if(Math.abs(toRow - newRow) == 1 && Math.abs(toCol - newCol) == 0){
+            return true;
+        }
+        else if(Math.abs(toRow - newRow) == 0 && Math.abs(toCol - newCol) == 1){
+            return true;
+        }
+        return false;
+    }
+
+
+
+
+    function getVision(newSquare){
+
+
+        if(toSwitch == WHITEKNIGHT || toSwitch == BLACKKNIGHT){
+            return true;
+        }
+        else if(toSwitch == WHITEKING){
+
+            for(let i=0; i<64; i++){
+
+
+                toSwitch = x[i].innerHTML;
+                toSwitchSquare = i;
+                newSquarePiece=x[newSquare].innerHTML;
+
+                if(newSquare != toSwitchSquare){
+                    if(blackPieces.indexOf(x[i].innerHTML) != -1){
+
+                        x[whiteKingSquare].innerHTML="";
+
+                        if((x[i].innerHTML !== BLACKPAWN && x[i].innerHTML !== BLACKKING) && typeRules(newSquare)){
+                            x[whiteKingSquare].innerHTML=WHITEKING;
+                            toSwitch = WHITEKING;
+                            toSwitchSquare = whiteKingSquare;
+                            return false;
+                        }
+                        else if(x[i].innerHTML == BLACKPAWN){
+                            x[newSquare].innerHTML=WHITEKING;
+
+                            if(pawnCapture(x[newSquare])){
+                                x[newSquare].innerHTML=newSquarePiece;
+                                x[whiteKingSquare].innerHTML=WHITEKING;
+                                toSwitch = WHITEKING;
+                                toSwitchSquare = whiteKingSquare;
+                                return false;
+                            }
+                            x[newSquare].innerHTML=newSquarePiece;
+                        }
+                        else if(x[i].innerHTML == BLACKKING && kingMovement(newSquare)){
+                            x[whiteKingSquare].innerHTML=WHITEKING;
+                            toSwitch = WHITEKING;
+                            toSwitchSquare = whiteKingSquare;
+                            return false;
+                        }
+                    }
+                }
+                
+            }
+            x[whiteKingSquare].innerHTML=WHITEKING;
+            toSwitch = WHITEKING;
+            toSwitchSquare = whiteKingSquare;
+            return true;
+        }
+        else if(toSwitch == BLACKKING){
+
+            for(let i=0; i<64; i++){
+
+
+                toSwitch = x[i].innerHTML;
+                toSwitchSquare = i;
+
+                if(newSquare != toSwitchSquare){
+                    if(whitePieces.indexOf(x[i].innerHTML) != -1){
+
+                        x[blackKingSquare].innerHTML="";//put this here because typeRules stops if there is a piece in the way, for example without this line of code the king could move down the same column the rook was looking at it from (so imagine the rook is above the king the king could still move down because typeRules would return false because there was a piece in the way being the king)
+
+                        if((x[i].innerHTML !== WHITEPAWN || x[i].innerHTML !== WHITEKING) && typeRules(newSquare)){
+                            x[blackKingSquare].innerHTML=BLACKKING;
+                            toSwitch = BLACKKING;
+                            toSwitchSquare = blackKingSquare;
+                            return false;
+                        }
+                        else if(x[i].innerHTML == WHITEPAWN){
+                            x[newSquare].innerHTML=BLACKKING;
+
+                            if(pawnCapture(x[newSquare])){
+                                x[newSquare].innerHTML="";
+                                x[blackKingSquare].innerHTML=BLACKKING;
+                                toSwitch = BLACKKING;
+                                toSwitchSquare = blackKingSquare;
+                                return false;
+                            }
+                            x[newSquare].innerHTML="";
+                        }
+                        else if(x[i].innerHTML == WHITEKING && kingMovement(newSquare)){ // Put this here because there is a possibility of an infinite recursive method where typeRules is called on the opposite color king and then get vision is called which leads to the same line of code from the opposite colored king and just repeating.
+                            x[blackKingSquare].innerHTML=BLACKKING;
+                            toSwitch = BLACKKING;
+                            toSwitchSquare = blackKingSquare;
+                            return false;
+                        }
+                    }
+                }
+
+            }
+            x[blackKingSquare].innerHTML=BLACKKING;
+            toSwitch = BLACKKING;
+            toSwitchSquare = blackKingSquare;
+            return true;
+        }
+        else if(toSwitch == BLACKROOK || toSwitch == WHITEROOK){
+            return getRookVision(newSquare);
+        }
+        else if(toSwitch==WHITEPAWN || toSwitch==BLACKPAWN){
+            let toRow = getRow(toSwitchSquare);
+            let toCol = getCol();
+            let newRow = getRow(newSquare);
+
+
+        for(let r = Math.min(newRow, toRow) + 1; r< Math.max(toRow, newRow); r++){
+            if(x[r*8+toCol].innerHTML != ""){
+                return false;
+            }
+        }
+        return true;
+        }
+
+        else if(toSwitch == WHITEBISHOP || toSwitch == BLACKBISHOP){
+            return getBishopVision(newSquare);
+        }
+        else if(toSwitch == WHITEQUEEN || toSwitch == BLACKQUEEN){
+            let toRow = getRow(toSwitchSquare);
+            let toCol = getCol();
+            let newRow = getRow(newSquare);
+            let newCol = getCol();
+
+
+        if(toRow == newRow || toCol == newCol){
+            return getRookVision(newSquare);
+        }
+            return getBishopVision(newSquare);
+        }
+        else{
+            return true;
+        }
+    }
+
+
+    
+
+
+    function getRookVision(newSquare){
+        let toRow = getRow(toSwitchSquare);
+        let toCol = getCol();
+        let newRow = getRow(newSquare);
+        let newCol = getCol();
+
+        if(toRow != newRow){
+            for(let r =Math.min(toRow, newRow) + 1; r<Math.max(newRow, toRow); r++){
+                if(x[r*8+toCol].innerHTML != ""){
+                    return false;
+                }
+            }
+            return true;
+        }
+        else if(toCol!=newCol){
+
+
+            for(let c = Math.min(toCol, newCol)+1; c<Math.max(toCol, newCol); c++){
+                if(x[toRow*8+c].innerHTML != ""){
+                    return false;
+                }
+            }
+            return true;
+        }
+        else{
+            return true;
+        }
+    }
+
+    function getBishopVision(newSquare){
+        let toRow = getRow(toSwitchSquare);
+        let toCol = getCol();
+        let newRow = getRow(newSquare);
+        let newCol = getCol();
+
+
+        let rowInc = (newRow-toRow)/(Math.abs(toRow-newRow));
+        let colInc = (newCol-toCol)/(Math.abs(toCol-newCol));
+
+
+        let r = toRow + rowInc;
+        let c = toCol + colInc;
+
+        
+        while(r!=newRow && c!=newCol && r>-1 && r<8 && c>-1 && c<8){
+
+            if(x[r*8+c].innerHTML !== ""){
+                return false;
+            }
+            
+            r+=rowInc;
+            c+=colInc;
+        }
+        return true;
+    }
+
+
+    function pawnCapture(y){
+        let toRow = getRow(toSwitchSquare);
+        let toCol = getCol();
+        let newRow = getRow(listOfCells.indexOf(y));
+        let newCol = getCol();
+
+        if(toSwitch == WHITEPAWN){
+
+            if(whiteSide == 1 && (newRow == toRow+1 && (newCol == toCol+1 || newCol == toCol-1))){
+                return true;
+            }
+            else if(whiteSide == 0 && (newRow == toRow-1 && (newCol == toCol+1 || newCol == toCol-1))){
+                return true;
+            }
+            return false;
+        }
+        else if(toSwitch == BLACKPAWN){
+
+            if(blackSide == 1 && (newRow == toRow+1 && (newCol == toCol+1 || newCol == toCol-1))){
+                return true;
+            }
+            else if(blackSide == 0 && (newRow == toRow-1 && (newCol == toCol+1 || newCol == toCol-1))){
+                return true;
+            }
+                return false;
+        }
+        return typeRules(listOfCells.indexOf(y));
+    }
+
+    </script>
+
+
+</body>
+</html>
+
+
